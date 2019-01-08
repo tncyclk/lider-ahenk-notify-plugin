@@ -3,7 +3,6 @@ package tr.org.liderahenk.notify.dialogs;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -56,8 +55,6 @@ public class NotifyTaskDialog extends DefaultTaskDialog {
 		composite.setLayout(new GridLayout(4, false));
 		
 		GridData data= new GridData(SWT.FILL, SWT.FILL, true, true,1,1);
-//        data.widthHint=300;
-//        data.heightHint=200;
 		composite.setLayoutData(data);
                 
         lblMessage = new Label(composite, SWT.NONE);
@@ -77,7 +74,7 @@ public class NotifyTaskDialog extends DefaultTaskDialog {
         textDuration = new Text(composite, SWT.MULTI | SWT.BORDER | SWT.WRAP | SWT.CENTER);
         GridData dudarion = new GridData(SWT.NONE, SWT.NONE, true, true, 1, 1);
         dudarion.widthHint=50;
-        dudarion.heightHint=23;	
+        dudarion.heightHint=20;	
         textDuration.setText("10");
         textDuration.setLayoutData(dudarion);
         
