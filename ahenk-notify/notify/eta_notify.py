@@ -22,10 +22,10 @@ class Sample(AbstractPlugin):
             message_size = self.task['size']
             if self.task['size'] == 'small':
                 self.execute(self.eta_notify_command_small.format(message_content=message_content, duration=message_duration, size=message_size))
-                self.logger.info("Successfully executed ETA Notify Message ")
+                self.logger.info("Successfully executed ETAP Notify Message ")
             else:
                 self.execute(self.eta_notify_command_fullscreen.format(message_content=message_content, duration=message_duration))
-                self.logger.info("Successfully executed ETA Notify Message ")
+                self.logger.info("Successfully executed ETAP Notify Message ")
 
             self.context.create_response(code=self.message_code.TASK_PROCESSED.value,
                                          message='Bilgilendirme Mesajı görevi başarıyla çalıştırıldı',

@@ -7,7 +7,7 @@ def info():
     inf['name'] = 'notify'
     inf['version'] = '1.0.0'
     inf['support'] = 'debian'
-    inf['description'] = 'notify massage for eta'
+    inf['description'] = 'notify massage for etap'
     inf['task'] = True
     inf['user_oriented'] = False
     inf['machine_oriented'] = False
